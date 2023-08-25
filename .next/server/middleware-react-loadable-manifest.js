@@ -1,0 +1,1 @@
+self.__REACT_LOADABLE_MANIFEST='{"../components/Logoslider.js -> react-owl-carousel":{"id":2568,"files":["static/chunks/568.f5f009c02cb97178.js"]}}';
