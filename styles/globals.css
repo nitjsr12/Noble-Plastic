@@ -7,9 +7,17 @@ body{
 .thin{
   font-weight:300 !important;
 }
+.transparent-header {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-color: #fff; /* Customize the color of the hamburger icon */
+}
 /* banner */
 img.logo {
-  width: 21%!important;
+  width: 100%!important;
 }
 li.nav-item {
   font-family: lato,Sans-serif;
@@ -27,7 +35,35 @@ li.nav-item a{
 
 li.nav-item a:hover{
   color: #a6ce41!important;
-    fill: #a6ce41!important;
+}
+li.nav-item a:focus{
+  color: #a6ce41!important;
+  fill: #a6ce41!important;
+}
+
+li.nav-item:hover::after {
+  fill: #a6ce41!important;
+  background-color: #A6CE41!important;
+}
+
+
+
+.banner-text {
+  position: absolute;
+  top: 375px;
+  right: 0;
+  width: 500px;
+  height: 150px;
+  /* border: 3px solid #73AD21; */
+  color: white;
+  z-index: 1;
+  padding: 20px 10px 40px 60px;
+  background: #00A0E3;
+}
+
+.overlay-content {
+  color: white;
+  text-align: center;
 }
 
 .carousel-inner {
@@ -148,8 +184,21 @@ img.rupee {
     height: 300px!important;
 }
 .impact:hover {
-  background-color: #171616!important;
+  background-color: #000000!important;
 
+}
+
+.vertical-line {
+  border-right: 1px solid rgb(255, 255, 255); /* Adjust the color and thickness as needed */
+  height: 180px; /* Adjust the height of the vertical line */
+  margin: 0 0px; /* Adjust the margin to control the spacing around the line */
+}
+.unicq-img{
+  width: 270px;
+
+}
+.card-aling{
+  text-align: -webkit-center;
 }
 p.impact-text {
   text-align: center;
@@ -158,6 +207,29 @@ p.impact-text {
   font-size: 20px;
   font-weight: 400;
 }
+
+.card {
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #3d3d3d;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
 
 .increment {
   color: #a6ce41!important;
@@ -200,14 +272,26 @@ button.btn-impact {
 }
 
 .p-journey {
-  color: #fff;
-  font-family: lato,Sans-serif;
-  font-size: 20px;
-  font-weight: 350;
-  line-height: 26px;
-  letter-spacing: .5px;
-  text-align: left;
+    color: #FFFFFF;
+    font-family: "Lato", Sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.5px;
+    text-align: left;
 }
+
+.p-journey-1{
+  border-right: 8px solid ; /* Adjust the color and thickness as needed */
+  height: 600px;
+  border-image: 
+    linear-gradient(
+      to bottom, 
+      #01a0e3, 
+      #a6ce41
+    ) 1 100%;
+}
+
 
 .unique_text {
   margin-top: 50px;
@@ -235,6 +319,22 @@ p.misson_text {
   text-align: left;
   padding: 20px 2px 20px 0px;
 }
+.Approach-card.card {
+  background-color: #bababa;
+  margin: 0px;
+  padding: 0;
+}
+.card-text {
+  align-self: center;
+}
+.p-approach {
+  color: #000000;
+  font-family: "Lato", Sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 38px;
+  padding: 0px 40px 20px 30px;
+}
 
 .vission {
   background-color: #00a0e3!important;
@@ -248,6 +348,38 @@ p.vission_text {
   line-height: 30px;
   text-align: left;
   padding-bottom: 40px;
+}
+.team-card {
+  background-color:transparent!important;
+  width: 100%;
+  align-items: center;
+}
+.n-team {
+  margin-bottom: 0px;
+  color: white!important;
+  font-family: "Lato", Sans-serif;
+  font-size: 20px!important;
+  text-align: center;
+}
+p.p-role {
+  color: #BABABA !important;
+  font-family: "Lato", Sans-serif;
+  font-size: 18px!important;
+  font-weight: 600;
+  text-align: center;
+}
+.i-team{
+  width: 200px!important;
+}
+.i-team:hover{
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transition-timing-function: ease-out;
+  transform: translateY(-8px);
+}
+.card-impact{
+  background-color: transparent!important;
+  border: 0!important;
 }
 
 .card_1 {
@@ -307,11 +439,15 @@ p.team_text {
 .t-impact {
   color: #2F2F2F;
   font-family: "Lato", Sans-serif;
-  font-size: 40px;
-  font-weight: 600;
+  font-size: 30px!important;
+  font-weight: 600!important;
   letter-spacing: 0.5px;
-  margin-top: 40px;
+  margin-top: 0!important;
   text-align: left;
+  background-image: url("/images/paper.png");
+  padding: 50px!important;
+  background-repeat: no-repeat;
+  margin-left: -60px!important;
 }
 
 p.p-impact {
@@ -329,6 +465,10 @@ p.p-impact {
 .i-impact {
   width: 550px!important;
   margin-right: -111px
+}
+.image-impact {
+  width: 532px!important;
+  margin-left: 110px;
 }
 hr.new {
   border: 3px solid #00a0e3!important;
@@ -417,6 +557,25 @@ p.f-title {
     min-height: 47px!important;
     padding: 6px 16px!important;
 }
+
+.footer-button {
+  font-family: "Lato", Sans-serif!important;
+  font-weight: 500!important;
+  border-style: solid!important;
+  border-width: 2px 2px 2px 2px!important;
+  border-radius: 27px 27px 27px 27px!important;
+  padding: 17px 60px 17px 60px!important;
+  background-color: #61CE7000!important;
+  color: #A6CE41!important;
+  border-color: #A6CE41!important;
+  font-size: 20px!important;
+}
+.footer-button:hover{
+  color: #ffffff!important;
+  border-color: #ffffff!important;
+  font-size: 20px!important;
+
+}
 /* mobile design start here */
 
 @media(max-width: 600px) {
@@ -496,6 +655,55 @@ p.p-footer {
   font-family: "Lato", Sans-serif;
   font-size: 18px;
   font-weight: 400;
+}
+
+.t-impact {
+  color: #2F2F2F;
+  font-family: "Lato", Sans-serif;
+  font-size: 20px!important;
+  font-weight: 600!important;
+  letter-spacing: 0.5px;
+  margin-top: 0!important;
+  text-align: left;
+  background-image: url("/images/paper.png");
+  padding: 50px!important;
+  background-repeat: no-repeat;
+  margin-left: 0px!important;
+}
+p.p-impact {
+  color: #BABABA;
+  font-family: "Lato", Sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.5px;
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+  padding-left: 0px;
+}
+hr.new {
+  border: 3px solid #00A0E3!important;
+  border-radius: 10px;
+  margin-top: 20px;
+  width: 81%;
+  margin-left: 34px;
+}
+hr.new-1 {
+  border: 3px solid #a6ce41!important;
+  border-radius: 10px;
+  margin-top: 20px;
+  width: 81%;
+  margin-left: 34px;
+}
+.image-impact {
+  width: 100%;
+  margin-top: -30px!important;
+  margin-left: 0px!important;
+}
+
+.image-journey{
+  width: 300px!important;
 }
 
 }

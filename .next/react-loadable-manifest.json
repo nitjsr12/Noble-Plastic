@@ -1,8 +1,8 @@
 {
   "../components/Logoslider.js -> react-owl-carousel": {
-    "id": 2568,
+    "id": "../components/Logoslider.js -> react-owl-carousel",
     "files": [
-      "static/chunks/568.f5f009c02cb97178.js"
+      "static/chunks/node_modules_react-owl-carousel_umd_OwlCarousel_js.js"
     ]
   }
 }

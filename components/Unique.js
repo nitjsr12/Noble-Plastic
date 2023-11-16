@@ -15,36 +15,53 @@ function Unique() {
             stakeholders lie at the heart of everything we do.
           </p>
         </div>
-        <Row>
-          <Col lg={4} className="mb-4">
-            <div className="card">
-              <Image src="./images/people.png" class="card-img-top" alt=" " />
-              <div className="card-body">
-                <p className="card-text">
-                We provide communities with increased employment, social equity and awareness of environmental protection methods, and better health.
-                </p>
-              </div>
-            </div>
+        <Row className="card-aling">
+          <Col lg={4} className="   vertical-line">
+      <div className="card position-relative unicq-img">
+        <Image
+          src="./images/pepole.png"
+          className="card-img-top "
+          alt="Card Image"
+        />
+        <div className="overlay">
+          <div className="card-body text-light">
+            <p className="card-text">We provide communities with increased employment, social equity and awareness of environmental protection methods, and better health.</p>
+          </div>
+        </div>
+      </div>
+     
           </Col>
-          <Col lg={4} className="mb-4">
-          <div className="card">
-              <Image src="./images/people.png" class="card-img-top" alt="test  " />
-              <div className="card-body">
-                <p className="card-text">
-                We improve the health of the environment by reducing plastic waste and carbon footprint, while ameliorating waste management.
-                </p>
-              </div>
-            </div>
+        
+
+          <Col lg={4} className=" vertical-line ">
+      <div className="card position-relative  unicq-img">
+        <Image
+          src="./images/Planet.png"
+          className="card-img-top"
+          alt="Card Image"
+        />
+        <div className="overlay">
+          <div className="card-body text-light">
+            <p className="card-text">We improve the health of the environment by reducing plastic waste and carbon footprint, while ameliorating waste management.</p>
+          </div>
+        </div>
+      </div>
+     
           </Col>
-          <Col lg={4} className="mb-4">
-          <div className="card">
-              <Image src="./images/people.png" class="card-img-top" alt="test  " />
-              <div className="card-body">
-                <p className="card-text">
-                We enable companies to significantly reduce their costs, increase profits, improve reputation and contribute to sustainability.
-                </p>
-              </div>
-            </div>
+        
+          <Col lg={4} className=" ">
+          <div className="card position-relative unicq-img">
+        <Image
+          src="./images/property.png"
+          className="card-img-top"
+          alt="Card Image"
+        />
+        <div className="overlay">
+          <div className="card-body text-light">
+            <p className="card-text">We enable companies to significantly reduce their costs, increase profits, improve reputation and contribute to sustainability.</p>
+          </div>
+        </div>
+      </div>
           </Col>
         </Row>
       </Container>

@@ -51,7 +51,7 @@ function Footer() {
     <textarea type="textarea" id="form3Example4" class="form-control" placeholder="Massage" />
   </div>
 <div>
-  <button type="submit" class="btn btn-primary btn-block mb-4">Sign up</button>
+  <button type="submit" class="btn  btn-block mb-4 footer-button">Submit</button>
   </div>
 </form>
           </Col>
